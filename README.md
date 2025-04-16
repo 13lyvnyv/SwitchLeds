@@ -28,11 +28,13 @@ chmod +x путь_до_скрипта.sh
 git clone https://github.com/13lyvnyv/SwitchLeds.git
 ```
 **4.2** Переходим в `File -> Settings -> Build, Execution, Deployment -> Embenddend Development`, указываем путь к CubeMX (обычно находится ~/STM32CubeMX)  
-**4.3** Далее, Переходим в `Run -> Edit Configurations` добавляем `Embedded GDB Server` и заполняем следующие поля:   
+**4.3** Далее, Переходим в `Run -> Edit Configurations` добавляем `Embedded GDB Server` и заполняем следующие поля:  
+
 Executable: SwitchLeds.elf   
 Upload executable: Always  
 'target remote' args: localhost:61234  
-GDB server: путь к ранее созданному bash-скрипту  
+GDB server: путь к ранее созданному bash-скрипту
+
 **4.4** Настройка завершена. Проект готов к сборке и отладке.
 
 ### Примечания
